@@ -1,0 +1,41 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1691073723759' stop='1691073817532'>
+    <name>Pago</name>
+    <title>Pago</title>
+    <test-cases>
+        <test-case start='1691073730692' status='passed' stop='1691073742016'>
+            <name>Go To Page</name>
+            <title>Go To Page</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1691073742016' status='passed' stop='1691073789397'>
+            <name>Comprar articulos de vestir con una cuenta de usuario ya registrada</name>
+            <title>Comprar articulos de vestir con una cuenta de usuario ya registrada</title>
+            <labels>
+                <label name='story' value='BOND-102'/>
+            </labels>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='e4ec8327-10ce-47d3-9ef3-cf2e180aea70-attachment.png' type='image/png' size='45648'/>
+            </attachments>
+            <description type='text'>Login into https://automationexercise.com/ </description>
+        </test-case>
+        <test-case start='1691073789398' status='passed' stop='1691073816171'>
+            <name>Validar los campos obligatorios para el registro de pago con tarjeta</name>
+            <title>Validar los campos obligatorios para el registro de pago con tarjeta</title>
+            <labels>
+                <label name='story' value='BOND-102'/>
+            </labels>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='d9e1b232-9c3e-4285-b821-8c5be6da0dbb-attachment.png' type='image/png' size='54738'/>
+            </attachments>
+            <description type='text'>Login into https://automationexercise.com/ </description>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

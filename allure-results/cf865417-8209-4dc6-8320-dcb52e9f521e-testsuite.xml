@@ -1,0 +1,67 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1691071384989' stop='1691071649555'>
+    <name>Carrito de Compras</name>
+    <title>Carrito de Compras</title>
+    <test-cases>
+        <test-case start='1691071393525' status='passed' stop='1691071416959'>
+            <name>Go To Page</name>
+            <title>Go To Page</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1691071416959' status='passed' stop='1691071420251'>
+            <name>Verificar la visualización del carrito de compras vacío</name>
+            <title>Verificar la visualización del carrito de compras vacío</title>
+            <labels>
+                <label name='story' value='BOND-104'/>
+            </labels>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='f2648d64-a935-40ad-9a9d-912da926db25-attachment.png' type='image/png' size='49449'/>
+            </attachments>
+            <description type='text'>Login into https://automationexercise.com/ </description>
+        </test-case>
+        <test-case start='1691071420251' status='passed' stop='1691071603626'>
+            <name>Añadir articulos de vestir al carrito de la compra</name>
+            <title>Añadir articulos de vestir al carrito de la compra</title>
+            <labels>
+                <label name='story' value='BOND-108'/>
+            </labels>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='e20d07fb-ed53-4a6c-956a-dd9b070ed102-attachment.png' type='image/png' size='64060'/>
+            </attachments>
+            <description type='text'>Login into https://automationexercise.com/ </description>
+        </test-case>
+        <test-case start='1691071603626' status='passed' stop='1691071617262'>
+            <name>Eliminar articulos de vestir del carrito de compras</name>
+            <title>Eliminar articulos de vestir del carrito de compras</title>
+            <labels>
+                <label name='story' value='BOND-109'/>
+            </labels>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='a7993dd4-1e5f-4f7a-a2d3-a1e5956a7324-attachment.png' type='image/png' size='49412'/>
+            </attachments>
+            <description type='text'>Login into https://automationexercise.com/ </description>
+        </test-case>
+        <test-case start='1691071617262' status='passed' stop='1691071648440'>
+            <name>Verificar la visualización del detalle de compra de articulos antes de confirmar la compra</name>
+            <title>Verificar la visualización del detalle de compra de articulos antes de confirmar la compra</title>
+            <labels>
+                <label name='story' value='BOND-110'/>
+            </labels>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='bc182d4c-5b76-4ee1-bfa8-518e4f50dfc0-attachment.png' type='image/png' size='59485'/>
+            </attachments>
+            <description type='text'>Login into https://automationexercise.com/ </description>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

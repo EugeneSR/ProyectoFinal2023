@@ -32,6 +32,8 @@ class MainAddChartPage extends BasePage {
     private bannerBiba:string="//h2[text()='Brand - Biba Products']";
 
     private bannerSearcher:string="//h2[text()='Searched Products']";
+
+   
     
 
 
@@ -102,7 +104,7 @@ class MainAddChartPage extends BasePage {
     async getBannerBusqueda(){
         return await this.driver.Page.textContent(this.bannerSearcher);
     }
-
+ 
 
 
 

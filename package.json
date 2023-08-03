@@ -5,12 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "test:login": "jest login.test.ts",
-    "test:register": "jest register.test.ts",
-    "test:purchase": "jest purchase.test.ts",
-    "test:addChart": "jest purchase.test.ts",
-    "test:items":"jest itemsChart.test.ts"
-
+    "test:usuario": "jest usuario.test.ts",
+    "test:pago": "jest pago.test.ts",
+    "test:carrito": "jest carritoCompras.test.ts",
+    "test:productos":"jest productos.test.ts"
     
   },
   "keywords": [],

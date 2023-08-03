@@ -1,0 +1,54 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1691075145127' stop='1691075266707'>
+    <name>Productos: Articulos de Vestir </name>
+    <title>Productos: Articulos de Vestir </title>
+    <test-cases>
+        <test-case start='1691075152795' status='passed' stop='1691075166456'>
+            <name>Go To Page</name>
+            <title>Go To Page</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1691075166457' status='passed' stop='1691075207874'>
+            <name>Verificar la visualización de artículos dentro de la categoría: MUJER, HOMBRE, NIÑOS</name>
+            <title>Verificar la visualización de artículos dentro de la categoría: MUJER, HOMBRE, NIÑOS</title>
+            <labels>
+                <label name='story' value='BOND-105'/>
+            </labels>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='982ae89a-cb74-4bbe-82b9-17cef07127de-attachment.png' type='image/png' size='189494'/>
+            </attachments>
+            <description type='text'>Login into https://automationexercise.com/ </description>
+        </test-case>
+        <test-case start='1691075207874' status='passed' stop='1691075238974'>
+            <name>Verificar la visualización de artículos dentro de la categoría: BRANDS</name>
+            <title>Verificar la visualización de artículos dentro de la categoría: BRANDS</title>
+            <labels>
+                <label name='story' value='BOND-106'/>
+            </labels>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='e5bfa67f-55d3-44e4-b695-999d6e7d45a8-attachment.png' type='image/png' size='91530'/>
+            </attachments>
+            <description type='text'>Login into https://automationexercise.com/ </description>
+        </test-case>
+        <test-case start='1691075238974' status='passed' stop='1691075264424'>
+            <name>Verificar la opción de búsqueda de prendas de vestir</name>
+            <title>Verificar la opción de búsqueda de prendas de vestir</title>
+            <labels>
+                <label name='story' value='BOND-107'/>
+            </labels>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='8107ec97-e12b-4b70-b5db-c29baaf7cb84-attachment.png' type='image/png' size='180080'/>
+            </attachments>
+            <description type='text'>Login into https://automationexercise.com/ </description>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,26 +1,16 @@
 import { mainAddChartPage } from '../src/pages/components/MainAddChartPage';
 import { driverInstance } from "../src/core/driver";
 import{ItemsPage}from "../src/pages/items.page";
-import { LoginPage } from "../src/pages/login.page";
 import dotenv from 'dotenv';
-
-import { TESTDATA } from '../data.app';
-import { mainPurchase } from "../src/pages/components/MainPurchasePage";
-import { AddChartShopPage } from '../src/pages/addChartShop.page';
-import { mainHeader } from '../src/pages/components/MainHeaderPage';
 dotenv.config({ path: `.env.test`, override: true });
 declare const reporter:any;
 
-describe('Feature My Store: Shopping Cart', () => {
+describe('Productos: Articulos de Vestir ', () => {
 
     let itemsPage: ItemsPage;
-    let loginPage: LoginPage;
 
     beforeAll(async () => {
         await driverInstance.startDriver();
-        loginPage = new LoginPage();
-        const url = String(process.env.URL);
-        await loginPage.navigateTo(url);
         itemsPage = new ItemsPage();
         
 
@@ -29,30 +19,12 @@ describe('Feature My Store: Shopping Cart', () => {
     afterAll(async () => {
         await driverInstance.closeDriver();
     });
-
-    it('Shopping Cart: Verify empty shopping cart display', async () => {
-        reporter
-        .description("Login into https://automationexercise.com/ ")  
-        .story("BOND-104");
-
-        await itemsPage.linkCarrito(); //link carrito
-
-        const message = await mainAddChartPage.showMessageSuccessEmpty();//get message  success
-      
-        //**********************EXPECT*************************************/
-       
-        expect(message).toEqual("Cart is empty!"); // It's empty
-     
-        //**********************END *************************************/
-
-        await itemsPage.linkProducts(); //link carrito
-        const screenshotBuffer = await driverInstance.Page.screenshot();
-        reporter.addAttachment("Screenshot", screenshotBuffer, "image/png");
- 
-
+    it('Go To Page', async () => {
+        const url = String(process.env.URL);
+        await itemsPage.navigateTo(url);
     });
 
-    it('Shopping Cart: Verify the display of items within the category: WOMEN, MEN, KIDS', async () => {
+    it('Verificar la visualización de artículos dentro de la categoría: MUJER, HOMBRE, NIÑOS', async () => {
         reporter
         .description("Login into https://automationexercise.com/ ")  
         .story("BOND-105");
@@ -132,10 +104,10 @@ expect(tshirts).toEqual("MEN - TSHIRTS PRODUCTS"); //
  
     });
 
-    it('Shopping Cart: Verify the display of items within the category: BRANDS', async () => {
+    it('Verificar la visualización de artículos dentro de la categoría: BRANDS', async () => {
         reporter
         .description("Login into https://automationexercise.com/ ")  
-        .story("BOND-107");
+        .story("BOND-106");
 
          await itemsPage.linkProducts(); //link products
 
@@ -207,10 +179,10 @@ expect(tshirts).toEqual("MEN - TSHIRTS PRODUCTS"); //
 
 });
 
-it('Shopping Cart: Verify the clothing items search option ', async () => {
+it('Verificar la opción de búsqueda de prendas de vestir', async () => {
     reporter
     .description("Login into https://automationexercise.com/ ")  
-    .story("BOND-109");
+    .story("BOND-107");
 
      await itemsPage.linkProducts(); //link products
 
@@ -234,10 +206,10 @@ it('Shopping Cart: Verify the clothing items search option ', async () => {
 expect(bannerBusqueda).toEqual("Searched Products"); // 
   
 //**********************END *************************************/
+await itemsPage.locateImagesSearch();
 
 const screenshotBuffer = await driverInstance.Page.screenshot();
 reporter.addAttachment("Screenshot", screenshotBuffer, "image/png");
-
 
 });
 

@@ -1,0 +1,43 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1691071386914' stop='1691071386928'>
+    <name>Pago</name>
+    <title>Pago</title>
+    <test-cases>
+        <test-case start='1691071386916' status='pending' stop='1691071386919'>
+            <name>Go To Page</name>
+            <title>Go To Page</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Temporarily disabled with xit</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1691071386921' status='pending' stop='1691071386921'>
+            <name>Comprar articulos de vestir con una cuenta de usuario ya registrada</name>
+            <title>Comprar articulos de vestir con una cuenta de usuario ya registrada</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Temporarily disabled with xit</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1691071386922' status='pending' stop='1691071386922'>
+            <name>Validar los campos obligatorios para el registro de pago con tarjeta</name>
+            <title>Validar los campos obligatorios para el registro de pago con tarjeta</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Temporarily disabled with xit</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

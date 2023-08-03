@@ -1,0 +1,54 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1691074147339' stop='1691074209928'>
+    <name>Usuario: Cliente</name>
+    <title>Usuario: Cliente</title>
+    <test-cases>
+        <test-case start='1691074154481' status='passed' stop='1691074165443'>
+            <name>Go To Page</name>
+            <title>Go To Page</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1691074165443' status='passed' stop='1691074194134'>
+            <name>Registrar nueva cuenta de usuario </name>
+            <title>Registrar nueva cuenta de usuario </title>
+            <labels>
+                <label name='story' value='BOND-101'/>
+            </labels>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='de6aaa41-e34c-44dc-ae83-0f3ce6d7c43b-attachment.png' type='image/png' size='264479'/>
+            </attachments>
+            <description type='text'>Login into https://automationexercise.com/</description>
+        </test-case>
+        <test-case start='1691074194134' status='passed' stop='1691074200538'>
+            <name>Iniciar sesion con correo electronico y contraseña invalidos</name>
+            <title>Iniciar sesion con correo electronico y contraseña invalidos</title>
+            <labels>
+                <label name='story' value='BOND-102'/>
+            </labels>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='8ef044eb-df6a-4f79-985d-11b8e6356e86-attachment.png' type='image/png' size='45469'/>
+            </attachments>
+            <description type='text'>Login into https://automationexercise.com/ </description>
+        </test-case>
+        <test-case start='1691074200538' status='passed' stop='1691074208418'>
+            <name>Iniciar sesion con email y password correctos </name>
+            <title>Iniciar sesion con email y password correctos </title>
+            <labels>
+                <label name='story' value='BOND-103'/>
+            </labels>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='644eca07-33d9-4008-ae5e-5e2e9188f571-attachment.png' type='image/png' size='269306'/>
+            </attachments>
+            <description type='text'>Login into https://automationexercise.com/ </description>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

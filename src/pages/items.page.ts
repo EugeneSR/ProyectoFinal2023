@@ -36,6 +36,7 @@ export class ItemsPage extends BasePage {
 
     private barraBusqueda:string="//input[@placeholder='Search Product']";
     private buttonBuscar:string="(//button[contains(@class,'btn btn-default')])[1]";
+    private locateImages:string="(//div[@class='col-sm-9 padding-right']//div)[1]";
 
 
     constructor() {
@@ -122,6 +123,9 @@ export class ItemsPage extends BasePage {
     }
     async buttonSearchItems() {
         await ElementActions.click(this.buttonBuscar);
+    }
+    async locateImagesSearch() {
+        await ElementActions.click(this.locateImages);
     }
 
   

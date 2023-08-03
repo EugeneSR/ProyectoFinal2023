@@ -18,13 +18,15 @@ export class AddChartShopPage extends BasePage {
 
     private viewProduct3:string="(//i[@class='fa fa-plus-square'])[3]";
     
-    private viewCart:string="//p[@class='text-center']//u[1]"; //Para ver la cola de compras
+    private viewCart:string="//u[text()='View Cart']";
+    //"//p[@class='text-center']//u[1]"; //Para ver la cola de compras
 
     private viewIconCart:string="(//ul[@class='nav navbar-nav']//a)[3]"//Link Carts
 
     private checkout:string="//a[contains(text(),'Proceed To Checkout')]"; //Proceed to checkout
 
-    private checkoutLogin:string="//u[text()='Register / Login']"; //Para acceder a la autentificación
+    private checkoutLogin:string="(//p[@class='text-center']//u)[1]";
+    //"//u[text()='Register / Login']"; //Para acceder a la autentificación
 
     private placeOrder:string="//a[contains(@class,'btn btn-default')]"; //place Order button
 
@@ -43,6 +45,8 @@ export class AddChartShopPage extends BasePage {
     private payButton:string="//button[@data-qa='pay-button']"; //pagar con tarjeta button
 
     private downloadInvoices:string = "//a[contains(text(),'Download Invoice')]";
+
+    private logoutButton:string="//a[contains(.,'Logout')]";
 
     constructor() {
         super();
@@ -126,6 +130,9 @@ async buttonViewProduct3() {
     async buttonDownloadBill(){ 
         await ElementActions.click(this.downloadInvoices);
     
+    }
+    async buttonLogout(){
+        await ElementActions.click(this.logoutButton);
     }
 
 }

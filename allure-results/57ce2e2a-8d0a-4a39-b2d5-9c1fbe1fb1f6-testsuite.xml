@@ -1,0 +1,115 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1691070097472' stop='1691070221566'>
+    <name>Carrito de Compras</name>
+    <title>Carrito de Compras</title>
+    <test-cases>
+        <test-case start='1691070100930' status='passed' stop='1691070122469'>
+            <name>Go To Page</name>
+            <title>Go To Page</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1691070122469' status='passed' stop='1691070124077'>
+            <name>Verificar la visualización del carrito de compras vacío</name>
+            <title>Verificar la visualización del carrito de compras vacío</title>
+            <labels>
+                <label name='story' value='BOND-104'/>
+            </labels>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='f25b6b6c-5f33-446a-9da4-45e4025d1956-attachment.png' type='image/png' size='49412'/>
+            </attachments>
+            <description type='text'>Login into https://automationexercise.com/ </description>
+        </test-case>
+        <test-case start='1691070124077' status='failed' stop='1691070220946'>
+            <name>Añadir articulos de vestir al carrito de la compra</name>
+            <title>Añadir articulos de vestir al carrito de la compra</title>
+            <labels>
+                <label name='story' value='BOND-108'/>
+            </labels>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Error: page.waitForSelector: Target page, context or browser has been closed</message>
+                <stack-trace>page.waitForSelector: Target page, context or browser has been closed
+                    at Function.&lt;anonymous> (C:\Users\USUARIO\Documents\GitHub\ProyectoFinal2023\src\core\element-actions.ts:10:35)
+                    at C:\Users\USUARIO\Documents\GitHub\ProyectoFinal2023\src\core\element-actions.ts:8:71
+                    at Object.&lt;anonymous>.__awaiter (C:\Users\USUARIO\Documents\GitHub\ProyectoFinal2023\src\core\element-actions.ts:4:12)
+                    at Function.setText (C:\Users\USUARIO\Documents\GitHub\ProyectoFinal2023\src\core\element-actions.ts:22:16)
+                    at AddChartItemsPage.&lt;anonymous> (C:\Users\USUARIO\Documents\GitHub\ProyectoFinal2023\src\pages\addChartItems.page.ts:346:33)
+                    at C:\Users\USUARIO\Documents\GitHub\ProyectoFinal2023\src\pages\addChartItems.page.ts:8:71
+                    at Object.&lt;anonymous>.__awaiter (C:\Users\USUARIO\Documents\GitHub\ProyectoFinal2023\src\pages\addChartItems.page.ts:4:12)
+                    at AddChartItemsPage.setQuantity (C:\Users\USUARIO\Documents\GitHub\ProyectoFinal2023\src\pages\addChartItems.page.ts:322:16)
+                    at C:\Users\USUARIO\Documents\GitHub\ProyectoFinal2023\test\carritoCompras.test.ts:303:33
+                    at fulfilled (C:\Users\USUARIO\Documents\GitHub\ProyectoFinal2023\test\carritoCompras.test.ts:5:58)</stack-trace>
+            </failure>
+            <description type='text'>Login into https://automationexercise.com/ </description>
+        </test-case>
+        <test-case start='1691070220947' status='failed' stop='1691070220950'>
+            <name>Eliminar articulos de vestir del carrito de compras</name>
+            <title>Eliminar articulos de vestir del carrito de compras</title>
+            <labels>
+                <label name='story' value='BOND-109'/>
+            </labels>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Error: page.waitForSelector: Target page, context or browser has been closed</message>
+                <stack-trace>page.waitForSelector: Target page, context or browser has been closed
+                    at Function.&lt;anonymous> (C:\Users\USUARIO\Documents\GitHub\ProyectoFinal2023\src\core\element-actions.ts:6:35)
+                    at C:\Users\USUARIO\Documents\GitHub\ProyectoFinal2023\src\core\element-actions.ts:8:71
+                    at Object.&lt;anonymous>.__awaiter (C:\Users\USUARIO\Documents\GitHub\ProyectoFinal2023\src\core\element-actions.ts:4:12)
+                    at Function.click (C:\Users\USUARIO\Documents\GitHub\ProyectoFinal2023\src\core\element-actions.ts:16:16)
+                    at AddChartItemsPage.&lt;anonymous> (C:\Users\USUARIO\Documents\GitHub\ProyectoFinal2023\src\pages\addChartItems.page.ts:366:30)
+                    at C:\Users\USUARIO\Documents\GitHub\ProyectoFinal2023\src\pages\addChartItems.page.ts:8:71
+                    at Object.&lt;anonymous>.__awaiter (C:\Users\USUARIO\Documents\GitHub\ProyectoFinal2023\src\pages\addChartItems.page.ts:4:12)
+                    at AddChartItemsPage.buttonDeleteItems (C:\Users\USUARIO\Documents\GitHub\ProyectoFinal2023\src\pages\addChartItems.page.ts:348:16)
+                    at C:\Users\USUARIO\Documents\GitHub\ProyectoFinal2023\test\carritoCompras.test.ts:335:33
+                    at C:\Users\USUARIO\Documents\GitHub\ProyectoFinal2023\test\carritoCompras.test.ts:8:71
+                    at Object.&lt;anonymous>.__awaiter (C:\Users\USUARIO\Documents\GitHub\ProyectoFinal2023\test\carritoCompras.test.ts:4:12)
+                    at Object.&lt;anonymous> (C:\Users\USUARIO\Documents\GitHub\ProyectoFinal2023\test\carritoCompras.test.ts:330:74)
+                    at Object.asyncJestTest (C:\Users\USUARIO\Documents\GitHub\ProyectoFinal2023\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:116:37)
+                    at C:\Users\USUARIO\Documents\GitHub\ProyectoFinal2023\node_modules\jest-jasmine2\build\queueRunner.js:35:12
+                    at mapper (C:\Users\USUARIO\Documents\GitHub\ProyectoFinal2023\node_modules\jest-jasmine2\build\queueRunner.js:22:19)
+                    at C:\Users\USUARIO\Documents\GitHub\ProyectoFinal2023\node_modules\jest-jasmine2\build\queueRunner.js:62:41</stack-trace>
+            </failure>
+            <description type='text'>Login into https://automationexercise.com/ </description>
+        </test-case>
+        <test-case start='1691070220950' status='failed' stop='1691070220952'>
+            <name>Verificar la visualización del detalle de compra de articulos antes de confirmar la compra</name>
+            <title>Verificar la visualización del detalle de compra de articulos antes de confirmar la compra</title>
+            <labels>
+                <label name='story' value='BOND-110'/>
+            </labels>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Error: page.waitForSelector: Target page, context or browser has been closed</message>
+                <stack-trace>page.waitForSelector: Target page, context or browser has been closed
+                    at Function.&lt;anonymous> (C:\Users\USUARIO\Documents\GitHub\ProyectoFinal2023\src\core\element-actions.ts:6:35)
+                    at C:\Users\USUARIO\Documents\GitHub\ProyectoFinal2023\src\core\element-actions.ts:8:71
+                    at Object.&lt;anonymous>.__awaiter (C:\Users\USUARIO\Documents\GitHub\ProyectoFinal2023\src\core\element-actions.ts:4:12)
+                    at Function.click (C:\Users\USUARIO\Documents\GitHub\ProyectoFinal2023\src\core\element-actions.ts:16:16)
+                    at AddChartItemsPage.&lt;anonymous> (C:\Users\USUARIO\Documents\GitHub\ProyectoFinal2023\src\pages\addChartItems.page.ts:151:30)
+                    at C:\Users\USUARIO\Documents\GitHub\ProyectoFinal2023\src\pages\addChartItems.page.ts:8:71
+                    at Object.&lt;anonymous>.__awaiter (C:\Users\USUARIO\Documents\GitHub\ProyectoFinal2023\src\pages\addChartItems.page.ts:4:12)
+                    at AddChartItemsPage.linkProducts (C:\Users\USUARIO\Documents\GitHub\ProyectoFinal2023\src\pages\addChartItems.page.ts:104:16)
+                    at C:\Users\USUARIO\Documents\GitHub\ProyectoFinal2023\test\carritoCompras.test.ts:359:33
+                    at C:\Users\USUARIO\Documents\GitHub\ProyectoFinal2023\test\carritoCompras.test.ts:8:71
+                    at Object.&lt;anonymous>.__awaiter (C:\Users\USUARIO\Documents\GitHub\ProyectoFinal2023\test\carritoCompras.test.ts:4:12)
+                    at Object.&lt;anonymous> (C:\Users\USUARIO\Documents\GitHub\ProyectoFinal2023\test\carritoCompras.test.ts:354:113)
+                    at Object.asyncJestTest (C:\Users\USUARIO\Documents\GitHub\ProyectoFinal2023\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:116:37)
+                    at C:\Users\USUARIO\Documents\GitHub\ProyectoFinal2023\node_modules\jest-jasmine2\build\queueRunner.js:35:12
+                    at mapper (C:\Users\USUARIO\Documents\GitHub\ProyectoFinal2023\node_modules\jest-jasmine2\build\queueRunner.js:22:19)
+                    at C:\Users\USUARIO\Documents\GitHub\ProyectoFinal2023\node_modules\jest-jasmine2\build\queueRunner.js:62:41</stack-trace>
+            </failure>
+            <description type='text'>Login into https://automationexercise.com/ </description>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

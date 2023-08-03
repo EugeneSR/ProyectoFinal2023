@@ -6,6 +6,7 @@ export class AddChartItemsPage extends BasePage {
 
     /************Locators***************************/
 
+    private iconCarrito:string = "(//ul[@class='nav navbar-nav']//a)[3]";
     private linkProduct: string="(//ul[@class='nav navbar-nav']//a)[2]"; 
 
     private viewProduct1: string="(//i[@class='fa fa-plus-square'])[1]";
@@ -90,6 +91,7 @@ export class AddChartItemsPage extends BasePage {
     private checkout:string="//a[contains(text(),'Proceed To Checkout')]"; //Proceed to checkout
 
     private continueCart:string="//div[@class='modal-footer']//button[1]"; 
+    private vierCartC:string="//u[text()='View Cart']";
 
     
     
@@ -136,8 +138,11 @@ export class AddChartItemsPage extends BasePage {
     private deleteItems33:string="//a[@data-product-id='42']//i[1]";
     private deleteItems34:string="//a[@data-product-id='43']//i[1]";
  
-   
-    
+    private imageItemsDeleted:string="//span[contains(.,'Cart is empty! Click here to buy products.')]";
+    private linkCart:string="//a[contains(.,'Cart')]";
+
+    private chekoutCart:string="//a[contains(text(),'Proceed To Checkout')]";
+    private imageDetalleCompras:string="//b[text()='Total Amount']";
 
     constructor() {
         super();
@@ -392,6 +397,23 @@ export class AddChartItemsPage extends BasePage {
         await ElementActions.click(this.deleteItems32);
         await ElementActions.click(this.deleteItems33);
         await ElementActions.click(this.deleteItems34);
+        await ElementActions.click(this.imageItemsDeleted);
+        await ElementActions.click(this.linkCart);    
     }
-    
+ async checkoutCart(){
+    await ElementActions.click(this.chekoutCart);
+ }
+
+ async clicViewCart(){
+    await ElementActions.click(this.vierCartC);
+ }
+
+ async detalleCompra(){
+    await ElementActions.click(this.imageDetalleCompras);
+ }
+ async clicIconCart(){
+
+    await ElementActions.click(this.iconCarrito);
+ }
+   
 }

@@ -36,6 +36,19 @@ export class RegisterPage extends BasePage {
     private zipCode: string="#zipcode";
     private movilNumber: string="#mobile_number";
     private buttonRegisterAccount: string = "(//button[@class='btn btn-default'])[1]";
+
+    private buttonContinue: string ="//a[contains(text(),'Continue')]";
+   
+    //-----------Login--------
+
+   private linkLogin: string = "//a[contains(.,'Signup / Login')]";
+    private emailLogin: string = "(//input[@name='email'])[1]";
+    private passwordLogin: string = "//input[@type='password']";
+    private loginButton: string = "(//button[@class='btn btn-default'])[1]";
+    private logoutButton:string="//a[contains(text(),'Logout')]";
+    private deleteButton:string="//a[contains(.,'Delete Account')]";
+    
+
    
     constructor() {
         super();
@@ -91,6 +104,30 @@ export class RegisterPage extends BasePage {
   
     async clicButtonRegisterAccount(){
         await ElementActions.click(this.buttonSignup);
+    }
+
+    async clicButtonContinue(){
+        await ElementActions.click(this.buttonContinue);
+    }
+    async clicButtonDelete(){
+        await ElementActions.click(this.deleteButton);
+    }
+    
+
+    //----------Login----------
+
+    async setEmail(text: string) {
+        await ElementActions.setText(this.emailLogin, text);
+    }
+    async setPassword(text: string) {
+        await ElementActions.setText(this.passwordLogin, text);
+    }
+    async clicLogin() {
+        await ElementActions.click(this.loginButton);
+    }
+   
+    async loginIcon() {
+        await ElementActions.click(this.linkLogin);
     }
 
 };
